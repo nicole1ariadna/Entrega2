@@ -1,7 +1,9 @@
 import { Route, Routes } from 'react-router-dom';
 import EventDetailPage from './pages/EventDetailPage';
 import HomePage from './pages/HomePage';
+import LoginPage from './pages/LoginPage';
 import SuccessPage from './pages/SucessPage';
+
 
 function App() {
   return (
@@ -11,6 +13,9 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/event/:id" element={<EventDetailPage />} />
+          <Route path="/login" element={<LoginPage />} />
+          <Route path="/login" element={<LoginPage />} />
+
           <Route path="/success" element={<SuccessPage />} />
         </Routes>
       </main>
